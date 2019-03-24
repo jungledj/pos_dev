@@ -59,13 +59,15 @@ CUERPO DOCUMENTO            =
   <!-- Site wrapper -->
   <div class="wrapper">
 
-    <!-- =============================================== -->
+  <?php
 
-    <!-- =============================================== -->
+    include "modulos/cabezote.php";
+
+  ?>
 
   </div>
   <!-- ./wrapper -->
 
-  <script src="js/plantilla.js"></script>
+  <script src="vistas/js/plantilla.js"></script>
 </body>
 </html>
