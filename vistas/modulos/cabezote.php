@@ -3,7 +3,7 @@
 <!-- ===============
 	LOGOTIPO
 ================ -->	
-	<a href="" class="logo">
+	<a href="inicio" class="logo">
 		
 		<!-- logo mini -->
 	      <!-- mini logo for sidebar mini 50x50 pixels -->
