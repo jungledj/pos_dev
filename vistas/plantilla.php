@@ -75,6 +75,12 @@ CUERPO DOCUMENTO            =
     CONTENIDO
     =============================================*/
     include "modulos/contenido.php";
+ 
+     /*=============================================
+    FOOTER
+    =============================================*/
+    include "modulos/footer.php";
+
   ?>
 
   </div>
