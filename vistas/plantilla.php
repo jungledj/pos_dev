@@ -72,10 +72,17 @@ CUERPO DOCUMENTO            =
     include "modulos/menu.php";
 
     /*=============================================
-    CONTENIDO
+    CONTENIDO - INICIO
     =============================================*/
-    include "modulos/contenido.php";
+    if(isset($_GET["ruta"])){
+
+      if($_GET["ruta"] == "inicio"){
+
+         include "modulos/inicio.php";
  
+      }
+    }
+
      /*=============================================
     FOOTER
     =============================================*/
