@@ -87,6 +87,10 @@ CUERPO DOCUMENTO            =
 
          include "modulos/".$_GET["ruta"].".php";
  
+      } else {
+
+        include "modulos/404.php";
+
       }
     }
 
