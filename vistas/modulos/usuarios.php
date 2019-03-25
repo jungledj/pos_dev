@@ -1,97 +1,135 @@
-
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-  <section class="content-header">
 
+  <section class="content-header">
+    
     <h1>
       
-        Administrar Usuarios
-      
+      Administrar usuarios
+    
     </h1>
-      
+
     <ol class="breadcrumb">
       
-        <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-        <li class="active">Administrar Usuarios</li>
-      
-    </ol>
+      <li class="active">Administrar usuarios</li>
     
+    </ol>
+
   </section>
 
-    <section class="content">
+  <section class="content">
 
-      <div class="box">
+    <div class="box">
 
-        <div class="box-header with-border">
-
-          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
-         
-            Agregar usuario
-         
-          </button>
-
-        </div>
-
-        <div class="box-body">
-        
-          <table class="table table-bordered table-striped">
-            
-            <thead>
-              
-              <tr>
-                
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Usuario</th>
-                <th>Foto</th>
-                <th>Perfil</th>
-                <th>Estado</th>
-                <th>Último loguin</th>
-                <th>Acciones</th>
-                
-
-              </tr> 
-
-            </thead>
-
-            <tbody>
-              
-              <tr>
-                
-                <td>1</td>
-                <td>Usuario Administrador</td>
-                <td>admin</td>
-                <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
-                <td>Administrador</td>
-                <td><button class="btn btn-success btn-xs">Activado</button></td>
-                <td>2019-02-30 12:05:40</td>
-                <td>
-                  
-                  <div class="btn-group">
-                    
-                    <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-                    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-                  
-                  </div>
-
-                </td>
+      <div class="box-header with-border">
   
-              </tr>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
+          
+          Agregar usuario
 
-            </tbody>
-
-
-          </table>
-
-        </div>
-        
+        </button>
 
       </div>
 
-    </section>
+      <div class="box-body">
+        
+       <table class="table table-bordered table-striped dt-responsive tablas">
+         
+        <thead>
+         
+         <tr>
+           
+           <th style="width:10px">#</th>
+           <th>Nombre</th>
+           <th>Usuario</th>
+           <th>Foto</th>
+           <th>Perfil</th>
+           <th>Estado</th>
+           <th>Último login</th>
+           <th>Acciones</th>
+
+         </tr> 
+
+        </thead>
+
+        <tbody>
+          
+          <tr>
+            <td>1</td>
+            <td>Usuario Administrador</td>
+            <td>admin</td>
+            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+            <td>Administrador</td>
+            <td><button class="btn btn-success btn-xs">Activado</button></td>
+            <td>2017-12-11 12:05:32</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+           <tr>
+            <td>1</td>
+            <td>Usuario Administrador</td>
+            <td>admin</td>
+            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+            <td>Administrador</td>
+            <td><button class="btn btn-success btn-xs">Activado</button></td>
+            <td>2017-12-11 12:05:32</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+           <tr>
+            <td>1</td>
+            <td>Usuario Administrador</td>
+            <td>admin</td>
+            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+            <td>Administrador</td>
+            <td><button class="btn btn-danger btn-xs">Desactivado</button></td>
+            <td>2017-12-11 12:05:32</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+       </table>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </div>
 
@@ -149,7 +187,7 @@ MODAL AGREGAR USUARIO
               
                 <span class="input-group-addon"><i class="fa fa-key"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" id="nuevoUsuario" required>
+                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" required>
 
               </div>
 
@@ -199,11 +237,11 @@ MODAL AGREGAR USUARIO
               
               <div class="panel">SUBIR FOTO</div>
 
-              <input type="file" class="nuevaFoto" name="nuevaFoto">
+              <input type="file" id="nuevaFoto" name="nuevaFoto">
 
-              <p class="help-block">Peso máximo de la foto 2MB</p>
+              <p class="help-block">Peso máximo de la foto 200 MB</p>
 
-              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
+              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="100px">
 
             </div>
 
@@ -223,13 +261,6 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <?php
-
-          $crearUsuario = new ControladorUsuarios();
-          $crearUsuario -> ctrCrearUsuario();
-
-        ?>
-
       </form>
 
     </div>
@@ -237,3 +268,5 @@ MODAL AGREGAR USUARIO
   </div>
 
 </div>
+
+
