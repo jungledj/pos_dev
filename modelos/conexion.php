@@ -1,13 +1,16 @@
 <?php
 
-/**
- * 
- */
 class Conexion{
-	
-	public function conectar(){
 
-		$link = new POD("","",""); 
+	static public function conectar(){
+
+		$link = new PDO("mysql:host=localhost;dbname=pos-copia",
+			            "root",
+			            "root");
+
+		$link->exec("set names utf8");
+
+		return $link;
 
 	}
 
