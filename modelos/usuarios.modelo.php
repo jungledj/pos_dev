@@ -26,7 +26,7 @@ class ModeloUsuarios{
 
 			$stmt -> execute();
 
-			return $stmt -> fetchAll();
+			return $stmt -> fetchAll(); 
 
 		}
 		
